@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./UserList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import { IconButton } from "@material-ui/core";
+import { rows } from "../../data";
+import { Link } from "react-router-dom";
 
 const UserList = () => {
+	const [data, setData] = useState(rows);
+
+	const handleDelete = (id) => {
+		const filteredList = data.filter((item) => item.id !== id);
+		return setData(filteredList);
+	};
+
 	const columns = [
 		{ field: "id", headerName: "ID", width: 70 },
 		{
@@ -49,21 +58,27 @@ const UserList = () => {
 			renderCell: (params) => {
 				return (
 					<>
-						<button
-							style={{
-								border: "none",
-								borderRadius: 10,
-								padding: "5 10",
-								backgroundColor: "#3bb077",
-								color: "white",
-								cursor: "pointer",
-								marginRight: 20,
-							}}
-						>
-							Edit
-						</button>
+						<Link to={`/user/${params.row.id}`}>
+							<button
+								style={{
+									border: "none",
+									borderRadius: 10,
+									padding: "5 10",
+									backgroundColor: "#3bb077",
+									color: "white",
+									cursor: "pointer",
+									marginRight: 20,
+								}}
+							>
+								Edit
+							</button>
+						</Link>
+
 						<IconButton size="small">
-							<DeleteOutlineIcon style={{ color: "red", cursor: "pointer" }} />
+							<DeleteOutlineIcon
+								style={{ color: "red", cursor: "pointer" }}
+								onClick={() => handleDelete(params.row.id)}
+							/>
 						</IconButton>
 					</>
 				);
@@ -71,100 +86,10 @@ const UserList = () => {
 		},
 	];
 
-	const rows = [
-		{
-			id: 1,
-			user: "Kamaru usman",
-			avatar: "https://pbs.twimg.com/media/CsA2ChGXEAE_CEP.jpg",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-		{
-			id: 2,
-			user: "Tunde Adepegba",
-			avatar:
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-		{
-			id: 3,
-			user: "Tunde Adepegba",
-			avatar: "https://pbs.twimg.com/media/CsA2ChGXEAE_CEP.jpg",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-		{
-			id: 4,
-			user: "Tunde Adepegba",
-			avatar:
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-		{
-			id: 5,
-			user: "Tunde Adepegba",
-			avatar:
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-		{
-			id: 6,
-			user: "Tunde Adepegba",
-			avatar:
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-		{
-			id: 7,
-			user: "Tunde Adepegba",
-			avatar:
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-		{
-			id: 8,
-			user: "Tunde Adepegba",
-			avatar:
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-		{
-			id: 9,
-			user: "Tunde Adepegba",
-			avatar:
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-		{
-			id: 10,
-			user: "Tunde Adepegba",
-			avatar:
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
-			email: "kamarusman@gmail.com",
-			status: "active",
-			transaction: "$130.00",
-		},
-	];
 	return (
 		<div className="userList">
 			<DataGrid
-				rows={rows}
+				rows={data}
 				disableSelectionOnClick
 				columns={columns}
 				pageSize={7}

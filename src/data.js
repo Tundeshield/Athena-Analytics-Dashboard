@@ -48,3 +48,94 @@ export const data = [
 		"Active User": 3490,
 	},
 ];
+
+export const rows = [
+	{
+		id: 1,
+		user: "Kamaru usman",
+		avatar: "https://pbs.twimg.com/media/CsA2ChGXEAE_CEP.jpg",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+	{
+		id: 2,
+		user: "Tunde Adepegba",
+		avatar:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+	{
+		id: 3,
+		user: "Tunde Adepegba",
+		avatar: "https://pbs.twimg.com/media/CsA2ChGXEAE_CEP.jpg",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+	{
+		id: 4,
+		user: "Tunde Adepegba",
+		avatar:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+	{
+		id: 5,
+		user: "Tunde Adepegba",
+		avatar:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+	{
+		id: 6,
+		user: "Tunde Adepegba",
+		avatar:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+	{
+		id: 7,
+		user: "Tunde Adepegba",
+		avatar:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+	{
+		id: 8,
+		user: "Tunde Adepegba",
+		avatar:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+	{
+		id: 9,
+		user: "Tunde Adepegba",
+		avatar:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+	{
+		id: 10,
+		user: "Tunde Adepegba",
+		avatar:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONyqUa1BCLMKVtDjHCSNqdJ4qYoxJ6vVjKw&usqp=CAU",
+		email: "kamarusman@gmail.com",
+		status: "active",
+		transaction: "$130.00",
+	},
+];
