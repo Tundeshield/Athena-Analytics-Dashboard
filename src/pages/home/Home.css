@@ -1,0 +1,13 @@
+.home {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.home .homeWidgets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+/*# sourceMappingURL=Home.css.map */

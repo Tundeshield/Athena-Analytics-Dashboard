@@ -1,0 +1,48 @@
+.widgetLg {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+.widgetLg .widgetLgTitle {
+  font-style: 22px;
+}
+
+.widgetLg .widgetLgTable {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.widgetLg .widgetLgTable .widgetLgTr .widgetLgDate,
+.widgetLg .widgetLgTable .widgetLgTr .widgetLgAmount {
+  font-weight: 300;
+}
+
+.widgetLg .widgetLgTable .widgetLgTr .widgetLgUser {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+}
+
+.widgetLg .widgetLgTable .widgetLgTr .widgetLgTh {
+  text-align: left;
+}
+
+.widgetLg .widgetLgTable .widgetLgTr .widgetLgImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=WidgetLg.css.map */

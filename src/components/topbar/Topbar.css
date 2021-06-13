@@ -1,0 +1,74 @@
+.topbar {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+}
+
+.topbar .topbar__wrapper {
+  height: 100%;
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar .topbar__wrapper .topbar__left {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.topbar .topbar__wrapper .topbar__left img {
+  width: 150px;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.topbar .topbar__wrapper .topbar__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .topbar__wrapper .topbar__right .topbar__right__iconContainer {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #555;
+}
+
+.topbar .topbar__wrapper .topbar__right .topbar__right__iconContainer .topIconBadge {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 15px;
+  height: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+}
+/*# sourceMappingURL=Topbar.css.map */
