@@ -27,4 +27,73 @@
   border-radius: 5px;
   font-size: 16px;
 }
+
+.user .userContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.user .userContainer .userShow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px;
+  box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 0.4);
+}
+
+.user .userContainer .userShow .userShowBottom .userShowTitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user .userContainer .userShow .userShowTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user .userContainer .userShow .userShowTop .userShowImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.user .userContainer .userShow .userShowTopTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+.user .userContainer .userShow .userShowTopTitle .userShowUsername {
+  font-weight: 600;
+}
+
+.user .userContainer .userShow .userShowTopTitle .userShowJob {
+  font-weight: 300;
+}
+
+.user .userContainer .userUpdate {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 20px;
+  box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -1px 2px 11px -1px rgba(0, 0, 0, 0.4);
+  margin-left: 20px;
+}
 /*# sourceMappingURL=user.css.map */
